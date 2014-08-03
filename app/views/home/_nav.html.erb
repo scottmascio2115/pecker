@@ -1,0 +1,12 @@
+<%= nav_bar :fixed => :top, :brand => "Pecker" do %>
+    <% if current_user %>
+        <%= menu_group :pull => :right do %>
+          <%= menu_item "Log Out", destroy_user_session_path, :method => :delete %>
+        <% end %>
+    <% else %>
+        <%= menu_group :pull => :right do %>
+          <%= menu_item "Sign In", new_user_session_path %>
+          <%= menu_item "Sign Up", new_user_registration_path %>
+        <% end %>
+    <% end %>
+<% end %>
