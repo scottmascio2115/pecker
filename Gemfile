@@ -25,6 +25,7 @@ gem "twitter-bootstrap-rails"
 gem 'devise'
 
 gem 'newrelic_rpm'
+gem 'passenger', '~> 4.0.48'
 
 group :production do
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
