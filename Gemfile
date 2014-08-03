@@ -23,6 +23,7 @@ gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) support
 gem "twitter-bootstrap-rails"
 
 gem 'devise'
+gem 'rails_12factor'
 
 gem 'newrelic_rpm'
 gem 'passenger', '~> 4.0.48'
